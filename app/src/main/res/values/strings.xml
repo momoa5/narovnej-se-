@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Narovnej se!</string>
+    <string name="dialog_k_uklony">· cvičte 2 krát denně, alespoň 5 minut \n· cvik opakujte 10 krát \n· cviky provádějte tahem, nikoli švihem</string>
+    <string name="dialog_k_uklony2">UKLÁNĚJTE HLAVU ZE STRANY NA STRANU</string>
+    <string name="dialog_k_krouzeni">ZAČNĚTE POMALU KROUŽIT SMĚREM K PRAVÉMU RAMENU, NÁSLEDNĚ PŘEDKLOŇTE HLAVU A DÁLE POKRAČUJTE K LEVÉMU RAMENU A ZPÁTKY</string>
+    <string name="dialog_k_krouzeni_danger">Je-li pohyb hlavou v záklonu bolestivý, provádějte jen přední půloblouk!</string>
+    <string name="dialog_k_predklon">PŘEDKLÁNĚJTE POMALU SVOJI HLAVU, ABY SE BRADA CO NEJVÍCE PŘIBLÍŽILA HRUDI, ALE NEZAPOMEŇTE NA ROVNÁ ZÁDA</string>
+    <string name="dialog_h_cat">STŘED TĚLA ZPEVNĚTE STAŽENÍM BŘIŠNÍCH A HÝŽĎOVÝCH SVALŮ, S NÁDECHEM VYHRBTE HRUDNÍ PÁTEŘ (KOČIČÍ HŘBET) A PŘI VÝDECHU PROTÁHNĚTE HRUDNÍ PÁTEŘ SMĚREM K PODLOŽCE</string>
+    <string name="dialog_h_cat_pr">JEDNÁ SE O STEJNÝ CVIK JAKO „KOČIČÍ HŘBET“ AKORÁT S OPŘENÍM O LOKTY</string>
+    <string name="dialog_h_vytaceni">PAŽE JSOU NATAŽENY. JEDNU Z NICH UPAŽTE DO VÝŠKY A PODIVEJTE SE ZA NÍ. V KRAJNÍ POLOZE PAŽI ZAKMITEJTE. CVIK PROVÁDĚJTE STŘÍDAVĚ NA OBĚ STRANY</string>
+    <string name="dialog_h_rucezahlavou">PROPLEŤTE PRSTY ZA HLAVOU A PŘI NÁDECHU TLAČTE LOKTY OD SEBE, S VÝDECHEM UVOLNĚTE</string>
+    <string name="dialog_h_opis">UPAŽTE RUCE A OBĚMA PAŽEMI OPISUJTE MALÉ KROUŽKY DOPŘEDU A DOZADU</string>
+    <string name="dialog_b_zatlaceni">POKRČTE KOLENA A KRČNÍ + BEDERNÍ PÁTEŘ TLAČTE SMĚREM K PODLOŽCE</string>
+    <string name="dialog_b_panev">POKRČENÉ NOHY MÍRNĚ ROZNOŽTE, S NÁDECHEM POSTUPNĚ ZVEDEJTE PÁNEV A HRUDNÍ PÁTEŘ, S VÝDECHEM SE VRACEJTE ZPĚT, BEDERNÍ PÁTEŘ TLAČTE K PODLOŽCE</string>
+    <string name="dialog_b_kolebka">SKRČTE KOLENA NAD BŘICHEM A PŘIDRŽTE SI JE RUKAMA, HLAVA ZŮSTÁVÁ NA PODLOŽCE. PŘI NÁDECHU TLAČTE KOLENA DO DLANÍ, PŘI VÝDECHU SE UVOLNĚTE A PŘITÁHNĚTE KOLENA K HRUDNÍKU</string>
+    <string name="dialog_b_sedy">LEŽTE NA ZÁDECH, MĚJTE POKRČENÁ KOLENA. PŘI VÝDECHU POSTUPNĚ ZVEDEJTE HLAVU, RAMENA, HRUĎ OD PODLOŽKY. POMALU POTOM POKLÁDEJTE ZPĚT. ZÁDA MUSÍ BÝT NAROVNANÁ</string>
+    <string name="pref_header_notifications1">Notifikace 1</string>
+    <string name="pref_title_enable_notifications">Enable notifications</string>
+    <string name="pref_title_notification_time">Notification time</string>
+    <string name="channel_name">All Notifications</string>
+    <string name="channel_description">All notifications</string>
+    
+
+</resources>
+

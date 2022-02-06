@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="cz.freelancer.narovnejse">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo_icon_main"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".SplashActivity"
+            android:screenOrientation="portrait"
+            >
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".MainActivity">
+
+        </activity>
+        <activity android:name=".OaplikaciActivity"></activity>
+        <activity android:name=".CviceniActivity"></activity>
+        <activity android:name=".SpravnedrzenitelaActivity"></activity>
+        <activity android:name=".NacosidatpozorActivity"></activity>
+        <activity android:name=".Nacosi_ChuzeActivity"></activity>
+        <activity android:name=".Nacosi_DrepovaniActivity"></activity>
+        <activity android:name=".Nacosi_ZvedaniActivity"></activity>
+        <activity android:name=".Nacosi_PcActivity"></activity>
+             <activity android:name=".Nacosi_Pc2Activity"></activity>
+        <activity android:name=".Nacosi_CarActivity"></activity>
+        <activity android:name=".Nacosi_SezeniActivity"></activity>
+        <activity android:name=".Nacosi_LezeniActivity"></activity>
+        <activity android:name=".Cviky_KrcniActivity"></activity>
+        <activity android:name=".Cviky_HrudniActivity"></activity>
+        <activity android:name=".Cviky_BederniActivity"></activity>
+        <activity android:name=".Cviky_k_uklonyActivity"></activity>
+        <activity android:name=".Cviky_k_krouzeniActivity"></activity>
+        <activity android:name=".Cviky_k_predklonActivity"></activity>
+        <activity android:name=".Cviky_h_catActivity"></activity>
+        <activity android:name=".Cviky_h_cat_prActivity"></activity>
+        <activity android:name=".Cviky_h_vytaceniActivity"></activity>
+        <activity android:name=".Cviky_h_rucezahlavouActivity"></activity>
+        <activity android:name=".Cviky_h_opisActivity"></activity>
+        <activity android:name=".Cviky_b_zatlaceniActivity"></activity>
+        <activity android:name=".Cviky_b_panevActivity"></activity>
+        <activity android:name=".Cviky_b_kolebkaActivity"></activity>
+        <activity android:name=".Cviky_b_sedyActivity"></activity>
+        <activity android:name=".NastaveniActivity"></activity>
+        <activity android:name=".NotifikaceActivity"></activity>
+        <receiver android:name=".ReminderBroadcast"></receiver>
+    </application>
+
+</manifest>

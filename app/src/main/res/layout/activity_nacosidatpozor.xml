@@ -1,0 +1,565 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/bgn_main_screen"
+    android:id="@+id/outLinear">
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/inLinear3"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/bg_cviceni"
+        android:orientation="vertical"
+
+        >
+
+        <Button
+            android:id="@+id/previous"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="←"
+            android:textSize="30dp"
+            android:textColor="#FFFFFF"
+            android:background="#000000"/>
+
+
+        <!--Nadpis-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="Na co dát pozor"
+                android:textColor="#88b6e5"
+                android:textSize="35sp" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="10">
+    <GridLayout
+        android:id="@+id/gridlayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="10dp"
+        android:columnCount="1"
+        android:rowCount="1"
+        android:alignmentMode="alignMargins"
+        android:columnOrderPreserved="false"
+        android:layout_weight="8"
+        android:padding="14dp">
+
+
+
+
+        <!-- Column1-->
+        <android.support.v7.widget.CardView
+            android:id="@+id/cardViewspravnedrzenitela"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_columnWeight="1"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_rowWeight="1"
+            app:cardElevation="4dp"
+            app:cardCornerRadius="8dp"
+            android:background="@drawable/bgbtn"
+            >
+
+            <RelativeLayout
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_width="match_parent"
+                android:layout_margin="7dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="88dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="left"
+                    android:src="@drawable/pi_01"
+                    android:id="@+id/danger_pic"
+                    android:transitionName="imageTransition"/>
+
+                <TextView
+                    android:id="@+id/text_posture"
+                    android:layout_width="153dp"
+                    android:layout_height="27dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_toStartOf="@+id/danger_pic2"
+                    android:layout_toLeftOf="@+id/danger_pic2"
+                    android:layout_toEndOf="@+id/danger_pic"
+                    android:layout_toRightOf="@+id/danger_pic"
+                    android:lineSpacingExtra="-5dp"
+                    android:text="Chůze"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="20dp"
+                    android:transitionName="descTransition"/>
+
+                <ImageView
+                    android:id="@+id/danger_pic2"
+                    android:layout_width="88dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_gravity="right"
+                    android:src="@drawable/pi_02"
+                    android:transitionName="imageTransition"/>
+
+            </RelativeLayout>
+
+
+
+        </android.support.v7.widget.CardView>
+
+
+
+
+        <!-- Column2-->
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cardViewspravnedrzenitela2"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_columnWeight="1"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_rowWeight="1"
+            app:cardElevation="4dp"
+            app:cardCornerRadius="8dp"
+            android:background="@color/dots_out_color"
+            >
+
+            <RelativeLayout
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_width="match_parent"
+                android:layout_margin="7dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="88dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="left"
+                    android:src="@drawable/pi_03"
+                    android:id="@+id/danger_pic3"/>
+
+                <TextView
+                    android:id="@+id/text_posture2"
+                    android:layout_width="153dp"
+                    android:layout_height="27dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginRight="3dp"
+                    android:layout_toStartOf="@+id/danger_pic4"
+                    android:layout_toLeftOf="@+id/danger_pic4"
+                    android:layout_toEndOf="@+id/danger_pic3"
+                    android:layout_toRightOf="@+id/danger_pic3"
+                    android:lineSpacingExtra="-5dp"
+                    android:text="Dřepování"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="19dp" />
+
+                <ImageView
+                    android:id="@+id/danger_pic4"
+                    android:layout_width="88dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_gravity="right"
+                    android:src="@drawable/pi_04" />
+
+            </RelativeLayout>
+
+
+
+        </android.support.v7.widget.CardView>
+
+
+
+
+        <!-- Column3-->
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cardViewspravnedrzenitela3"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_columnWeight="1"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_rowWeight="1"
+            app:cardElevation="4dp"
+            app:cardCornerRadius="8dp"
+            android:background="@color/dots_out_color"
+            >
+
+            <RelativeLayout
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_width="match_parent"
+                android:layout_margin="7dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="88dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="left"
+                    android:src="@drawable/pi_05"
+                    android:id="@+id/danger_pic5"/>
+
+                <TextView
+                    android:id="@+id/text_posture3"
+                    android:layout_width="148dp"
+                    android:layout_height="61dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="9dp"
+                    android:layout_marginLeft="9dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_toStartOf="@+id/danger_pic6"
+                    android:layout_toLeftOf="@+id/danger_pic6"
+                    android:layout_toEndOf="@+id/danger_pic5"
+                    android:layout_toRightOf="@+id/danger_pic5"
+                    android:lineSpacingExtra="-5dp"
+                    android:text="Zvedání těžkých věcí"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="20dp" />
+
+                <ImageView
+                    android:id="@+id/danger_pic6"
+                    android:layout_width="88dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_gravity="right"
+                    android:src="@drawable/pi_06" />
+
+            </RelativeLayout>
+
+
+
+        </android.support.v7.widget.CardView>
+
+
+        <!-- Column4-->
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cardViewspravnedrzenitela4"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_columnWeight="1"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_rowWeight="1"
+            app:cardElevation="4dp"
+            app:cardCornerRadius="8dp"
+            android:background="@color/dots_out_color"
+            >
+
+            <RelativeLayout
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_width="match_parent"
+                android:layout_margin="7dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="88dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="left"
+                    android:src="@drawable/pi_07"
+                    android:id="@+id/danger_pic7"/>
+
+                <TextView
+                    android:id="@+id/text_posture4"
+                    android:layout_width="148dp"
+                    android:layout_height="52dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="9dp"
+                    android:layout_marginLeft="9dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_toStartOf="@+id/danger_pic8"
+                    android:layout_toLeftOf="@+id/danger_pic8"
+                    android:layout_toEndOf="@+id/danger_pic7"
+                    android:layout_toRightOf="@+id/danger_pic7"
+                    android:lineSpacingExtra="-5dp"
+                    android:text="Sezení u počítače"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="20dp" />
+
+                <ImageView
+                    android:id="@+id/danger_pic8"
+                    android:layout_width="88dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_gravity="right"
+                    android:src="@drawable/pi_08" />
+
+            </RelativeLayout>
+
+
+
+        </android.support.v7.widget.CardView>
+
+        <!-- Column5-->
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cardViewspravnedrzenitela5"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_columnWeight="1"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_rowWeight="1"
+            app:cardElevation="4dp"
+            app:cardCornerRadius="8dp"
+            android:background="@color/dots_out_color"
+            >
+
+            <RelativeLayout
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_width="match_parent"
+                android:layout_margin="7dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="88dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="left"
+                    android:src="@drawable/pi_09"
+                    android:id="@+id/danger_pic9"/>
+
+                <TextView
+                    android:id="@+id/text_posture5"
+                    android:layout_width="148dp"
+                    android:layout_height="52dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="9dp"
+                    android:layout_marginLeft="9dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_toStartOf="@+id/danger_pic10"
+                    android:layout_toLeftOf="@+id/danger_pic10"
+                    android:layout_toEndOf="@+id/danger_pic9"
+                    android:layout_toRightOf="@+id/danger_pic9"
+                    android:lineSpacingExtra="-5dp"
+                    android:text="Jízda v autě"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="20dp" />
+
+                <ImageView
+                    android:id="@+id/danger_pic10"
+                    android:layout_width="88dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_gravity="right"
+                    android:src="@drawable/pi_10" />
+
+            </RelativeLayout>
+
+
+
+        </android.support.v7.widget.CardView>
+
+        <!-- Column6-->
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cardViewspravnedrzenitela6"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_columnWeight="1"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_rowWeight="1"
+            app:cardElevation="4dp"
+            app:cardCornerRadius="8dp"
+            android:background="@color/dots_out_color"
+            >
+
+            <RelativeLayout
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_width="match_parent"
+                android:layout_margin="7dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="88dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="left"
+                    android:src="@drawable/pi_11"
+                    android:id="@+id/danger_pic11"/>
+
+                <TextView
+                    android:id="@+id/text_posture6"
+                    android:layout_width="148dp"
+                    android:layout_height="52dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="9dp"
+                    android:layout_marginLeft="9dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_toStartOf="@+id/danger_pic12"
+                    android:layout_toLeftOf="@+id/danger_pic12"
+                    android:layout_toEndOf="@+id/danger_pic11"
+                    android:layout_toRightOf="@+id/danger_pic11"
+                    android:lineSpacingExtra="-5dp"
+                    android:text="Sezení"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="20dp" />
+
+                <ImageView
+                    android:id="@+id/danger_pic12"
+                    android:layout_width="88dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_gravity="right"
+                    android:src="@drawable/pi_12" />
+
+            </RelativeLayout>
+
+
+
+        </android.support.v7.widget.CardView>
+
+        <!-- Column7-->
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cardViewspravnedrzenitela7"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_columnWeight="1"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_rowWeight="1"
+            app:cardElevation="4dp"
+            app:cardCornerRadius="8dp"
+            android:background="@color/dots_out_color"
+            >
+
+            <RelativeLayout
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_width="match_parent"
+                android:layout_margin="7dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="88dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="left"
+                    android:src="@drawable/pi_13"
+                    android:id="@+id/danger_pic13"/>
+
+                <TextView
+                    android:id="@+id/text_posture7"
+                    android:layout_width="148dp"
+                    android:layout_height="52dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="9dp"
+                    android:layout_marginLeft="9dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_toStartOf="@+id/danger_pic14"
+                    android:layout_toLeftOf="@+id/danger_pic14"
+                    android:layout_toEndOf="@+id/danger_pic13"
+                    android:layout_toRightOf="@+id/danger_pic13"
+                    android:lineSpacingExtra="-5dp"
+                    android:text="Ležení"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="20dp" />
+
+                <ImageView
+                    android:id="@+id/danger_pic14"
+                    android:layout_width="88dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_gravity="right"
+                    android:src="@drawable/pi_14" />
+
+            </RelativeLayout>
+
+
+
+        </android.support.v7.widget.CardView>
+
+    </GridLayout>
+
+    </ScrollView>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</LinearLayout>

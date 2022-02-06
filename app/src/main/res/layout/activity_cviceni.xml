@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/bgn_main_screen"
+    android:id="@+id/outLinear">
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/inLinear"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/bg_cviceni"
+        android:orientation="vertical"
+
+        >
+
+        <Button
+            android:id="@+id/previous"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="←"
+            android:textSize="30dp"
+            android:textColor="#FFFFFF"
+            android:background="#000000"/>
+
+
+
+          <!--Nadpis-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="Prevence"
+                android:textColor="#88b6e5"
+                android:textSize="50sp" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+
+    <GridLayout
+        android:id="@+id/gridlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="10dp"
+        android:columnCount="2"
+        android:rowCount="3"
+        android:alignmentMode="alignMargins"
+        android:columnOrderPreserved="false"
+        android:layout_weight="8"
+        android:padding="14dp">
+
+
+
+
+                            <!-- Column1-->
+        <android.support.v7.widget.CardView
+            android:id="@+id/cardViewspravnedrzenitela"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+            android:layout_columnWeight="1"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_rowWeight="1"
+        app:cardElevation="4dp"
+        app:cardCornerRadius="8dp"
+        >
+
+        <LinearLayout
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_margin="16dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/correctposture_pic4"
+                android:layout_gravity="center_horizontal" />
+
+            <TextView
+                android:text="Správné držení těla"
+                android:textColor="#000000"
+                android:textSize="20dp"
+                android:textAlignment="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="-5dp"/>
+
+        </LinearLayout>
+
+
+
+    </android.support.v7.widget.CardView>
+
+
+
+
+        <!-- Column2-->
+
+        <android.support.v7.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_rowWeight="1"
+            app:cardElevation="8dp"
+            app:cardCornerRadius="8dp"
+            android:background="@color/dots_out_color"
+            android:id="@+id/cardViewnacosidatpozor"
+            >
+
+            <LinearLayout
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_margin="16dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/whistle_pic"
+                    android:layout_gravity="center_horizontal"/>
+
+                <TextView
+                    android:text="Na co si dát pozor"
+                    android:textColor="#000000"
+                    android:textSize="20dp"
+                    android:textAlignment="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:lineSpacingExtra="-5dp"/>
+
+            </LinearLayout>
+
+
+
+        </android.support.v7.widget.CardView>
+
+
+
+
+        <!-- Column3-->
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cardViewcviky"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_rowWeight="1"
+            app:cardElevation="8dp"
+            app:cardCornerRadius="8dp"
+            android:background="@color/dots_out_color"
+            >
+
+            <LinearLayout
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_margin="16dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/svihadlo_pic"
+                    android:layout_gravity="center_horizontal"/>
+
+                <TextView
+                    android:text="Cviky"
+                    android:textColor="#000000"
+                    android:textSize="20dp"
+                    android:textAlignment="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+
+
+        </android.support.v7.widget.CardView>
+
+
+
+
+
+
+
+
+
+
+
+
+    </GridLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/bgn_main_screen"
+    android:id="@+id/outLinear">
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/inLinear3"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/bg_cviceni"
+        android:orientation="vertical"
+
+        >
+
+        <Button
+            android:id="@+id/previous"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="←"
+            android:textSize="30dp"
+            android:textColor="#FFFFFF"
+            android:background="#000000"/>
+
+
+        <!--Nadpis-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="Cviky"
+                android:textColor="#88b6e5"
+                android:textSize="50sp" />
+
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/text_posture4"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="center"
+            android:layout_marginStart="4dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginRight="5dp"
+            android:lineSpacingExtra="-5dp"
+            android:text="Vyber si partii na cvičení"
+            android:textAlignment="center"
+            android:textColor="#636363"
+            android:textSize="15dp"
+            android:transitionName="descTransition"/>
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btn_krcnip"
+            android:layout_width="85dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="27dp"
+            android:layout_marginLeft="27dp"
+            android:background="@drawable/bgbtn_cviky_moznosti"
+            android:text="Krční páteř"
+            android:textColor="@color/white_messy" />
+
+        <Button
+            android:id="@+id/btn_hrudnip"
+            android:layout_width="85dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:layout_marginRight="159dp"
+            android:text="Hrudní páteř"
+            android:textColor="#88b6e5"
+            android:background="@drawable/bgbtn_cviky_moznosti"
+            android:layout_centerInParent="true"/>
+
+        <Button
+            android:id="@+id/btn_bedernip"
+            android:layout_width="85dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="27dp"
+            android:layout_marginRight="27dp"
+            android:text="Bederní páteř"
+            android:textColor="@color/white_messy"
+            android:background="@drawable/bgbtn_cviky_moznosti"/>
+
+    </RelativeLayout>
+
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="10">
+
+
+
+
+        <!--content1-->
+        <GridLayout
+            android:id="@+id/gridlayout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="8dp"
+            android:layout_weight="8"
+            android:alignmentMode="alignMargins"
+            android:columnCount="2"
+            android:columnOrderPreserved="false"
+            android:padding="14dp"
+            android:rowCount="1">
+
+
+            <!-- Column1-->
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardView_kocicihrbet"
+                android:layout_width="10dp"
+                android:layout_height="80dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/bgbtn"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="4dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="7dp"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:id="@+id/text_posture"
+                        android:layout_width="153dp"
+                        android:layout_height="27dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="4dp"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginBottom="19dp"
+                        android:layout_toStartOf="@+id/danger_pic2"
+                        android:layout_toLeftOf="@+id/danger_pic2"
+                        android:layout_toEndOf="@+id/danger_pic"
+                        android:layout_toRightOf="@+id/danger_pic"
+                        android:lineSpacingExtra="-5dp"
+                        android:text="„Kočičí hřbet“"
+                        android:textAlignment="center"
+                        android:textColor="#000000"
+                        android:textSize="16dp"
+                        android:transitionName="descTransition" />
+
+
+                </RelativeLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+
+            <!-- Column2-->
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardView_kocicihrbetPR"
+                android:layout_width="10dp"
+                android:layout_height="80dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="16dp"
+                android:background="@color/dots_out_color"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="4dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="7dp"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:id="@+id/text_posture2"
+                        android:layout_width="153dp"
+                        android:layout_height="40dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="4dp"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginBottom="11dp"
+                        android:layout_toStartOf="@+id/danger_pic4"
+                        android:layout_toLeftOf="@+id/danger_pic4"
+                        android:layout_toEndOf="@+id/danger_pic3"
+                        android:layout_toRightOf="@+id/danger_pic3"
+                        android:lineSpacingExtra="-2dp"
+                        android:text="„Kočičí hřbet“ na předloktí"
+                        android:textAlignment="center"
+                        android:textColor="#000000"
+                        android:textSize="16dp" />
+
+
+                </RelativeLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+
+            <!-- Column3-->
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardView_vytaceni"
+                android:layout_width="10dp"
+                android:layout_height="80dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="16dp"
+                android:background="@color/dots_out_color"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="4dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="7dp"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:id="@+id/text_posture3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="27dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="9dp"
+                        android:layout_marginLeft="9dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginBottom="19dp"
+                        android:layout_toStartOf="@+id/danger_pic6"
+                        android:layout_toLeftOf="@+id/danger_pic6"
+                        android:layout_toEndOf="@+id/danger_pic5"
+                        android:layout_toRightOf="@+id/danger_pic5"
+                        android:lineSpacingExtra="-5dp"
+                        android:text="Vytáčení do stran"
+                        android:textAlignment="center"
+                        android:textColor="#000000"
+                        android:textSize="16dp" />
+
+
+
+                </RelativeLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+            <!-- Column4-->
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardView_rucezahlavou"
+                android:layout_width="10dp"
+                android:layout_height="80dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="16dp"
+                android:background="@color/dots_out_color"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="4dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="7dp"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:id="@+id/text_posture3"
+                        android:layout_width="123dp"
+                        android:layout_height="27dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="9dp"
+                        android:layout_marginLeft="9dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginBottom="19dp"
+                        android:layout_toStartOf="@+id/danger_pic6"
+                        android:layout_toLeftOf="@+id/danger_pic6"
+                        android:layout_toEndOf="@+id/danger_pic5"
+                        android:layout_toRightOf="@+id/danger_pic5"
+                        android:lineSpacingExtra="-5dp"
+                        android:text="Ruce za hlavou"
+                        android:textAlignment="center"
+                        android:textColor="#000000"
+                        android:textSize="16dp" />
+
+
+
+                </RelativeLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+            <!-- Column5-->
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardView_opis"
+                android:layout_width="10dp"
+                android:layout_height="80dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="16dp"
+                android:background="@color/dots_out_color"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="4dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="7dp"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:id="@+id/text_posture5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="31dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerInParent="true"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="9dp"
+                        android:layout_marginLeft="9dp"
+                        android:layout_marginTop="17dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_toStartOf="@+id/danger_pic6"
+                        android:layout_toLeftOf="@+id/danger_pic6"
+                        android:layout_toEndOf="@+id/danger_pic5"
+                        android:layout_toRightOf="@+id/danger_pic5"
+                        android:lineSpacingExtra="-5dp"
+                        android:text="Opisování kroužků"
+                        android:textAlignment="center"
+                        android:textColor="#000000"
+                        android:textSize="16dp" />
+
+
+
+                </RelativeLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+        </GridLayout>
+
+
+    </ScrollView>
+
+
+
+
+</LinearLayout>

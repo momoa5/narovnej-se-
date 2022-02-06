@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+    android:startOffset="500"
+    android:duration="1200"
+    >
+    <!-- (3) určuje kdy se zapne Anim od spuštění App
+         (4) délka Anim                              -->
+
+
+    <alpha
+        android:fromAlpha="0.0"
+        android:toAlpha="1.0"
+        />
+
+
+</set>

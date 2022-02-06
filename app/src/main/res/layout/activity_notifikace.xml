@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/bgn_main_screen"
+    android:id="@+id/outLinear">
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/inLinear3"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/bg_cviceni"
+        android:orientation="vertical"
+
+        >
+
+        <Button
+            android:id="@+id/previous"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="←"
+            android:textSize="30dp"
+            android:textColor="#FFFFFF"
+            android:background="#000000"/>
+
+
+        <!--Nadpis-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="Notifikace"
+                android:textColor="#88b6e5"
+                android:textSize="50sp" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+
+
+    <RelativeLayout
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="40dp"
+            android:text="Notifikace"
+            android:textSize="17dp"
+            android:textColor="@color/dots_in_color" />
+
+        <Switch
+            android:id="@+id/main_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="40dp"></Switch>
+
+        <TextView
+            android:id="@+id/info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="Notifikace se opakuje jednou za časové období."
+            android:textColor="@color/dots_in_color"
+            android:textSize="15dp" />
+
+
+        <TextView
+            android:id="@+id/info2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/info"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="Zadejte časový údaj v minutách / hodinách."
+            android:textColor="@color/dots_in_color"
+            android:textSize="15dp" />
+
+
+        <Switch
+            android:id="@+id/min_hout_switch"
+            android:enabled="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/info2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"></Switch>
+
+
+        <TextView
+            android:id="@+id/info3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/min_hout_switch"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="3dp"
+            android:text="minuty / hodiny"
+            android:textColor="@color/dots_in_color"
+            android:textSize="10dp" />
+
+
+        <EditText
+            android:id="@+id/edit_minuty"
+            android:enabled="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Pocet minut"
+            android:layout_below="@+id/info3"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="20dp"
+            android:inputType="number"/>
+
+        <EditText
+            android:id="@+id/edit_hodin"
+            android:enabled="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Pocet hodin"
+            android:layout_below="@+id/info3"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="40dp"
+            android:layout_marginTop="20dp"
+            android:inputType="number"/>
+
+
+        <Button
+            android:id="@+id/notifikace_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="40dp"
+            android:layout_marginBottom="20dp"
+            android:enabled="false"
+            android:text="Nastavit notifikaci"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </RelativeLayout>
+
+</LinearLayout>

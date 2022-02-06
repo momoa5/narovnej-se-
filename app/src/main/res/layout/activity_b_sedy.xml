@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/bgn_main_screen"
+    android:id="@+id/outLinear">
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/inLinear3"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/bg_cviceni"
+        android:orientation="vertical"
+
+        >
+
+        <Button
+            android:id="@+id/previous"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="←"
+            android:textSize="30dp"
+            android:textColor="#FFFFFF"
+            android:background="#000000"/>
+
+
+        <!--Nadpis-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="Sedy - lehy"
+                android:textColor="#88b6e5"
+                android:textSize="50sp" />
+
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/text_posture4"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="center"
+            android:layout_marginStart="4dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginRight="5dp"
+            android:lineSpacingExtra="-1dp"
+            android:text="Bederní páteř"
+            android:textAlignment="center"
+            android:textColor="#636363"
+            android:textSize="25dp"
+            android:transitionName="descTransition"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:id="@+id/pic_krk1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/silueta_bedra_1"/>
+
+
+        <com.varunest.sparkbutton.SparkButton
+            android:id="@+id/spark_button"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignBottom="@+id/pic_krk1"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="21dp"
+            app:sparkbutton_activeImage="@drawable/zarovka_on"
+            app:sparkbutton_iconSize="50dp"
+            app:sparkbutton_inActiveImage="@drawable/zarovka_off"
+            app:sparkbutton_primaryColor="@color/primaryColor_Animation"
+            app:sparkbutton_secondaryColor="@color/secondaryColor_Animation" />
+
+
+    </RelativeLayout>
+
+
+
+
+</LinearLayout>
